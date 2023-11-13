@@ -5,7 +5,10 @@ fixture('Getting Started').page('https://trytestingthis.netlify.app/');
 /*
 Notes
 -----------------------------------------------------------------
-1. To run the code through terminal -     npx testcafe chrome tests/ -e
+1a. To run the code through terminal -     npx testcafe chrome tests/ -e    (  npx testcafe chrome .\Tests\test1.js)
+1b. Run on mobile device            -     npx testcafe "chrome:emulation:device=iphone X" .\Tests\test2action.js --qr-code
+1c. Find selector                    -     We need to open the url in debuger mode   - await t.debug()
+1d. using url qr test on other device -    .\node_modules\.bin\testcafe remote .\Tests\ --qr-code
 2. To tun on live mode              -    npx testcafe chrome .\Tests\test1.js --live
 3. To stop live mode                -     cntr+c
 4a. for locator                      -    For class we use .   for id we use #   & for others we can inspect then copy the selector
@@ -34,6 +37,7 @@ Notes
 15. File upload                       -    await t.setFilesToUpload('#myfile', ['./uploads/abc.txt'])
 16. Resize browser window             -    await t.resizeWindow(800, 600)    or   await t.maximizeWindow()
 17. Assertion  for match              -     await t.expect(Selector('body > div.navbar > a:nth-child(2)').innerText).eql('Home')
+18.Light house performance            -    need to check test3lighthouse.js   , then in the terminal -        npx testcafe 'chrome:emulation:cdpPort=9222' .\Tests\test3lighthouse.js
     
   
                                              
@@ -133,3 +137,5 @@ test('2nd test', async t => {
    
     
 } )
+
+

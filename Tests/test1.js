@@ -3,6 +3,8 @@ fixture('Getting Started').page('https://www.google.com/');
 test('1st test',async t => {
 
     //For class we use .   for id we use #
+
+     
     await t.typeText('#APjFqb' , 'Abcd')
     await t.click('.gNO89b')
     await t.wait(2000)
