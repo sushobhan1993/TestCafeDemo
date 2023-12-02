@@ -6,11 +6,24 @@ test('1st test',async t => {
 
      
     await t.typeText('#APjFqb' , 'Abcd')
+   
     await t.click('.gNO89b')
     await t.wait(2000)
 
 
 })
+
+test("My Test", async (t) => {
+    
+    })
+    .before(async (t) => {
+        // inject in the test context any input data needed to run this specific test
+        t.ctx.inputData = inputData;
+    })
+    .after(async (t) => {
+        // test finalization code
+    });
+
 
 //Run the test
 ////Run the testnpx testcafe chrome .\Tests\kaayu1.js

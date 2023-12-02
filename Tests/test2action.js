@@ -38,7 +38,7 @@ Notes
 16. Resize browser window             -    await t.resizeWindow(800, 600)    or   await t.maximizeWindow()
 17. Assertion  for match              -     await t.expect(Selector('body > div.navbar > a:nth-child(2)').innerText).eql('Home')
 18.Light house performance            -    need to check test3lighthouse.js   , then in the terminal -        npx testcafe 'chrome:emulation:cdpPort=9222' .\Tests\test3lighthouse.js
-    
+19. Debuuger                          -   We can add debugger just using   debugger;    
   
                                              
 
