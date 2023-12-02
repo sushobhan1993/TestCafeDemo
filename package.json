@@ -11,8 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "save-dev": "^0.0.1-security",
-    "testcafe": "^3.4.0"
+    "testcafe": "^3.4.0",
+    "testcafe-reporter-html": "^1.4.6"
   },
+
+
+
+
   "devDependencies": {
     "testcafe-lighthouse": "^2.0.0"
   }
