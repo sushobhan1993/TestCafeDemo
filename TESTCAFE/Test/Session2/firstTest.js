@@ -70,7 +70,8 @@ test
 
 // Using loop for checkbox dom structure 
 
-test('Test1', async t => {
+test
+.skip('Test1', async t => {
     // Starts at http://devexpress.github.io/testcafe/example
 
  
@@ -101,10 +102,61 @@ test('Test1', async t => {
     //#tree-node > ol > li > span > label > span.rct-checkbox
     //#tree-node > ol > li > span > button > svg
     const counter = await checkboxmain.count;
+    console.log("counter",counter);
+
 
     console.log(counter);
+    
+   
 
 
 
     
+});
+
+//new data add on table
+test
+
+('Test1', async t => {
+    // Starts at http://devexpress.github.io/testcafe/example
+
+    // Selector for the first element to be clicked
+    const Element = '#app > div > div > div.home-body > div > div:nth-child(1) > div > div.card-body > h5';
+
+    await t.click(Element);
+
+    //Child Selector for the textbox to be clicked
+    const childselector = Selector ('ul').child(3);
+
+    //const Headername = Selector('#app > div > div > div.pattern-backgound.playgound-header > div');
+    
+    await t.click(childselector).wait(3000);
+
+    //console.log(Headername);
+
+    const Addbutton = Selector('#addNewRecordButton');
+
+    await t.click(Addbutton);
+
+
+    const Firstname = Selector ('#firstName');
+    const Lastname  = Selector ('#lastName');
+    const Email = Selector ('#userEmail');
+    const Age =  Selector ('#age');
+    const Salary = Selector ('#salary');
+    const Dept = Selector ('#department');
+    const Submitbutton = Selector ('#submit');
+
+    await t.typeText(Firstname , 'Sushobhan');
+    await t.typeText(Lastname , 'Sen');
+    await t.typeText(Email, 'sen21@yopmail.com');
+    await t.typeText(Age, '24');
+    await t.typeText(Salary,'8976');
+    await t.typeText(Dept,'Tester');
+
+
+    await t.click (Submitbutton);
+
+    await t.wait(5000);
+  
 });
