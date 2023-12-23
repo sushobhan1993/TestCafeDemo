@@ -13,6 +13,7 @@ test('1st test',async t => {
    // await t.pressKey ('enter')
 
 })
+//Demobgbgv
 
 //Run the testnpx testcafe chrome .\Tests\kaayu1.js
 // For run in terminal we have to use    npx testcafe chrome tests/ -e
@@ -20,5 +21,5 @@ test('1st test',async t => {
 test('2nd test',async t => {
 
     await t.typeText('#username' , 'sushobhan123')
-    
+    await t.wait (2000)
 })
