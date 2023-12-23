@@ -21,5 +21,5 @@ test('1st test',async t => {
 test('2nd test',async t => {
 
     await t.typeText('#username' , 'sushobhan123')
-    await t.wait (2000)
+    
 })
