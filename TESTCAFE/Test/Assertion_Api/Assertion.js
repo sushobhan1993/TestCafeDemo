@@ -1,4 +1,4 @@
-import { Selector } from 'testcafe';
+import { ClientFunction, Selector } from 'testcafe';
 
 fixture('Assertion Api').page('https://demoqa.com/elements').skipJsErrors(true);
 
@@ -30,3 +30,15 @@ test ('Notok', async t =>{
     await t.expect(Selector('#submit').exists).notOk('The submit button are there');
 
 })
+
+//check that i am on proper url or not
+test ('contains',async t =>{
+    
+    const getLocation = ClientFunction(() => document.location.href.toString());
+
+    await t.expect (getLocation()).contains('https://demoqa.com/elements');
+
+})
+
+
+
