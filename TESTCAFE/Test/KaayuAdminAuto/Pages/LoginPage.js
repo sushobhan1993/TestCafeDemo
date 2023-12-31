@@ -1,3 +1,4 @@
+//LoginPage.js
 // Import necessary TestCafe modules
 import { ClientFunction, t, Selector } from 'testcafe';
 

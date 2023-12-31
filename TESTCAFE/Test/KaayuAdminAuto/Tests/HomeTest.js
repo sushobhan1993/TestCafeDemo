@@ -1,4 +1,6 @@
+//HomeTest.js
 import { ClientFunction, t, Selector } from 'testcafe';
+import xlsx from 'node-xlsx';
 import HomePage from '../Pages/HomePage';
 import LoginPage from '../Pages/LoginPage';
 
@@ -8,9 +10,25 @@ const Homeurl = 'http://15.156.242.8/'
 
 const getURL = ClientFunction(() => window.location.href);
 
-fixture('Home Page').page(url).skipJsErrors(true).beforeEach(async t =>{
-    LoginPage.SetUserName('sushobhan123');
-    LoginPage.SetPassword('Password@1234');
+// Read data from Excel file
+const excelFile = xlsx.parse('D:/TestCafeHome/TestCafeDemo-2/TESTCAFE/Test/Data/testData_Kaayu.xlsx');
+const excelSheet = excelFile.find(sheet => sheet.name === 'Data');
+const excelSheetData = excelSheet.data;
+const headers = excelSheetData.shift();
+
+const dataset = excelSheetData.map(row => {
+    const testData = {};
+    row.forEach((data, idx) => (testData[headers[idx]] = data));
+    return testData;
+});
+
+
+fixture('Home Page').page(url).beforeEach(async t => {
+    
+    const data = dataset[0]; // Change this index based on your data structure
+
+    LoginPage.SetUserName(data.username);
+    LoginPage.SetPassword(data.password);
     LoginPage.ClickonLoginButton();
 
     await t.wait(5000);
