@@ -1,5 +1,5 @@
 import { Selector } from 'testcafe';
-fixture('Getting Started').page('http://15.156.242.8/login').skipJsErrors(true);
+fixture('Getting Started').page('http://15.156.242.8/login')
 
 //fixture('Getting Started').page('https://admin.kaayu.ca/login').skipJsErrors(true);
 

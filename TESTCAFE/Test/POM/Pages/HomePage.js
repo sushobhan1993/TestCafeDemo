@@ -1,22 +1,16 @@
 // Import necessary TestCafe modules
+//HomePage.js
 import { ClientFunction, t, Selector } from 'testcafe';
 
-class HomePage{
-
-    constructor(){
-        
+class HomePage {
+    constructor() {
         this.logoutBtn = Selector('#content > div > a > i');
-        this.responceCard =  Selector('div#flash');
+        this.responceCard = Selector('div#flash');
     }
 
-    async ClickonLogoutButton(){
-
+    async ClickonLogoutButton() {
         await t.click(this.logoutBtn);
-    } 
-
-    
-
-
+    }
 }
 
 export default new HomePage();
