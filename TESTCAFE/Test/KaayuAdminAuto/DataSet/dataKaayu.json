@@ -1,0 +1,19 @@
+[
+    {
+        "username": "sushobhan123",
+        "password": "Password@1234",
+        "expectedResult": "Dashboard"
+    },
+    {
+        "username": "sushobhan123",
+        "password": "sffgggg",
+        "expectedResult": "The password must be at least 8 characters."
+    },
+    {
+        "username": "sushobhan123",
+        "password": "zscxcsgvdhhghggh",
+        "expectedResult": "Invalid login credentials."
+    }
+
+    
+]
