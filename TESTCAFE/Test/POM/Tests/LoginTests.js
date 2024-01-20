@@ -1,4 +1,12 @@
 //LoginTests.js
+// To run this   npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\LoginTests.js
+// To run with Html reports    npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\LoginTests.js --reporter html:reports/htmlReports/POMReports.html
+//To run full POM   npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\*.js --reporter html:reports/htmlReports/POMReports.html
+
+//To run with cucumber  npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\LoginTests.js --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonreports
+// To run full with cucumber npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\*.js --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonreports
+// To genarate reports  npm run createReport
+
 import { ClientFunction, t } from 'testcafe';
 import xlsx from 'node-xlsx';
 import LoginPage from '../Pages/LoginPage'; // Import the class, not an instance

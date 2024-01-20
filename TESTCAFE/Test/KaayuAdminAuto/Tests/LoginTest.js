@@ -7,8 +7,8 @@ const dataset = require('D:/TestCafeHome/TestCafeDemo-2/TESTCAFE/Test/KaayuAdmin
 const url = 'http://15.156.242.8/login';
 const getURL = ClientFunction(() => window.location.href);
 
-fixture('Login Page').page(url).skipJsErrors(true);
-
+//fixture('Login Page').page(url).skipJsErrors(true);
+fixture('Login Page').page(url);
 test('Loading login Page', async t => {
     await t.expect(getURL()).contains(url);
     await t.expect(LoginPage.loginBtn.exists).ok();

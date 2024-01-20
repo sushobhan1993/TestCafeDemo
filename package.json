@@ -4,15 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:reports": "testcafe chrome tests/POM/Tests/*.js --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonreports",  
+      "createReport": "node report-generator.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "node-xlsx": "^0.23.0",
     "save-dev": "^0.0.1-security",
-    "testcafe": "^3.4.0",
+    "testcafe": "^1.20.1",
+    "testcafe-reporter-cucumber-json": "^6.3.0",
     "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {

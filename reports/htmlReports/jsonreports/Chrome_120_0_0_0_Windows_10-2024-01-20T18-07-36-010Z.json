@@ -1,0 +1,278 @@
+[
+  {
+    "description": "Home Page",
+    "elements": [
+      {
+        "id": "ScenarioLoading Home Page",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Loading Home Page",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\HomeTests.js:1:0"
+            },
+            "name": "Loading Home Page",
+            "result": {
+              "duration": 19138,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Loading Home Page</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioSuccessfully Logout",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Successfully Logout",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\HomeTests.js:1:0"
+            },
+            "name": "Successfully Logout",
+            "result": {
+              "duration": 21844,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Successfully Logout</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      }
+    ],
+    "id": "Home Page",
+    "keyword": "Feature",
+    "line": 0,
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "120.0.0.0"
+      },
+      "device": "Windows",
+      "platform": {
+        "name": "windows",
+        "version": "10"
+      },
+      "reportTime": "2024-01-20T18:07:36.010Z",
+      "startTime": "2024-01-20T18:06:16.842Z"
+    },
+    "name": "Home Page",
+    "skipped": false,
+    "tags": [
+      {
+        "line": 0,
+        "name": "@successfully"
+      },
+      {
+        "line": 0,
+        "name": "@logout"
+      },
+      {
+        "line": 0,
+        "name": "@loading"
+      },
+      {
+        "line": 0,
+        "name": "@home"
+      },
+      {
+        "line": 0,
+        "name": "@page"
+      }
+    ],
+    "uri": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\HomeTests.js:1"
+  },
+  {
+    "description": "Login Page",
+    "elements": [
+      {
+        "id": "ScenarioLoading login Page",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Loading login Page",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\LoginTests.js:1:0"
+            },
+            "name": "Loading login Page",
+            "result": {
+              "duration": 5727,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Loading login Page</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioLogin Page - You logged into a secure area!",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Login Page - You logged into a secure area!",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\LoginTests.js:1:0"
+            },
+            "name": "Login Page - You logged into a secure area!",
+            "result": {
+              "duration": 17582,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Login Page - You logged into a secure area!</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      },
+      {
+        "id": "ScenarioLogin Page - Your username is invalid!",
+        "keyword": "Scenario",
+        "line": 0,
+        "name": "Login Page - Your username is invalid!",
+        "skipped": false,
+        "sourceLine": "undefined",
+        "status": "passed",
+        "steps": [
+          {
+            "hidden": false,
+            "keyword": ">",
+            "match": {
+              "location": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\LoginTests.js:1:0"
+            },
+            "name": "Login Page - Your username is invalid!",
+            "result": {
+              "duration": 14837,
+              "status": "passed"
+            },
+            "tags": [],
+            "text": [
+              "<a href=\"#\">Login Page - Your username is invalid!</a>"
+            ]
+          }
+        ],
+        "tags": [],
+        "type": "scenario",
+        "uri": ""
+      }
+    ],
+    "id": "Login Page",
+    "keyword": "Feature",
+    "line": 0,
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "120.0.0.0"
+      },
+      "device": "Windows",
+      "platform": {
+        "name": "windows",
+        "version": "10"
+      },
+      "reportTime": "2024-01-20T18:07:36.010Z",
+      "startTime": "2024-01-20T18:06:16.842Z"
+    },
+    "name": "Login Page",
+    "runInfo": {
+      "endTime": "2024-01-20T18:07:36.010Z",
+      "passed": 5,
+      "startTime": "2024-01-20T18:06:16.842Z",
+      "testCount": 5,
+      "userAgents": [
+        "Chrome 120.0.0.0 / Windows 10"
+      ],
+      "warnings": []
+    },
+    "skipped": false,
+    "tags": [
+      {
+        "line": 0,
+        "name": "@login"
+      },
+      {
+        "line": 0,
+        "name": "@page"
+      },
+      {
+        "line": 0,
+        "name": "@your"
+      },
+      {
+        "line": 0,
+        "name": "@username"
+      },
+      {
+        "line": 0,
+        "name": "@invalid"
+      },
+      {
+        "line": 0,
+        "name": "@you"
+      },
+      {
+        "line": 0,
+        "name": "@logged"
+      },
+      {
+        "line": 0,
+        "name": "@into"
+      },
+      {
+        "line": 0,
+        "name": "@secure"
+      },
+      {
+        "line": 0,
+        "name": "@area"
+      },
+      {
+        "line": 0,
+        "name": "@loading"
+      }
+    ],
+    "uri": "D:\\TestCafeHome1\\TestCafeDemo\\TESTCAFE\\Test\\POM\\Tests\\LoginTests.js:1"
+  }
+]

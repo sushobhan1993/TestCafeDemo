@@ -6,7 +6,6 @@ const dataset = require('D:/TestCafeHome/TestCafeDemo-2/TESTCAFE/Test/Data/data.
 
 // Global Variable: Define a function to get the current URL
 const getURL = ClientFunction(() => window.location);
-//we can use this   const getURL = ClientFunction(() => window.location.href);
 
 
 // Test Fixture: Define the test suite with a fixture
@@ -21,14 +20,40 @@ dataset.forEach(data => {
         // Test Function: Define the test steps using the provided data
         async t => {
             // Perform actions on the page using data values
+            await t.maximizeWindow()
             await t.typeText(Selector('#username'), data.username);
             await t.typeText(Selector('#password'), data.password);
             await t.click('#login > button > i');
 
+
+            
+           // Take a screenshot and save it with the expected result name in the specified path
+           await t.takeScreenshot({
+            //path: `D:/TestCafeHome/TestCafeDemo-2/screenshots/${data.expectedResult}.png`,
+            path: `screenshots/${data.expectedResult}.png`,
+            fullPage: true
+        });
+
+
             // Make an assertion based on the expected result
+
             await t.expect(Selector('div#flash').innerText).contains(data.expectedResult);
         }
     );
 });
 
-// Check if the current URL is correct after login
+// Running suggestion  https://prnt.sc/VccNdUIIzTon
+
+//npx testcafe chrome .\data_driven_emaple.js 
+// For video 
+//npx testcafe chrome .\data_driven_emaple.js
+// Take a screenshot and save it with the expected result name in the specified path
+/*
+await t.takeScreenshot({
+    //path: `D:/TestCafeHome/TestCafeDemo-2/screenshots/${data.expectedResult}.png`,
+    path: `screenshots/${data.expectedResult}.png`,
+    fullPage: true
+});
+
+*/
+
