@@ -7,6 +7,8 @@
 // To run full with cucumber npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\*.js --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonreports
 // To genarate reports  npm run createReport
 
+//To find path  testcafe chrome .\TESTCAFE\Test\POM\Tests\
+
 import { ClientFunction, t } from 'testcafe';
 import xlsx from 'node-xlsx';
 import LoginPage from '../Pages/LoginPage'; // Import the class, not an instance
@@ -94,3 +96,4 @@ dataset.forEach(data => {
 
 
 
+//npx testcafe chrome D:\TestCafeHome1\TestCafeDemo\TESTCAFE\Test\POM\Tests\LoginTests.js 

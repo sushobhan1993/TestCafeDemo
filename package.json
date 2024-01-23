@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "test:reports": "testcafe chrome tests/POM/Tests/*.js --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonreports",  
-      "createReport": "node report-generator.js"
+    "test:reports": "testcafe chrome tests/POM/Tests/*.js --reporter cucumber-json --reporter-json-folder=reports/htmlReports/jsonreports",
+    "createReport": "node report-generator.js",
+    "VideoDataDriven": "testcafe chrome  ./TESTCAFE/Test/POM/Tests/LoginTests.js   --video artifacts/videos"
+
   },
   "keywords": [],
   "author": "",
@@ -15,8 +17,8 @@
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "node-xlsx": "^0.23.0",
     "save-dev": "^0.0.1-security",
-    "testcafe": "^1.20.1",
-    "testcafe-reporter-cucumber-json": "^6.3.0",
+    "testcafe": "^3.5.0",
+    "testcafe-reporter-cucumber-json": "^4.0.1",
     "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {

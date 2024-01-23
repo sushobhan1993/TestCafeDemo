@@ -50,6 +50,7 @@ export enum Syntax {
     NewExpression            = 'NewExpression',
     ObjectExpression         = 'ObjectExpression',
     ObjectPattern            = 'ObjectPattern',
+    PrivateIdentifier        = 'PrivateIdentifier',
     Program                  = 'Program',
     Property                 = 'Property',
     RestElement              = 'RestElement',
