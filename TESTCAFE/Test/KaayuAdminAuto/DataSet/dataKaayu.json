@@ -13,6 +13,15 @@
         "username": "sushobhan123",
         "password": "zscxcsgvdhhghggh",
         "expectedResult": "Invalid login credentials."
+    },
+
+    {
+
+        "search_HiringPipeline": "MASTER HIRING PIPELINE",
+        "JobTitle": "Testing",
+        "Companyname":"Cartwright Ltd",
+        "JobDes":"Test demo"
+
     }
 
     

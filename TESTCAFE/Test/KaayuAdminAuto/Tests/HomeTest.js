@@ -2,10 +2,10 @@ import { ClientFunction, t } from 'testcafe';
 import HomePage from '../Pages/HomePage';
 import LoginPage from '../Pages/LoginPage';
 
-const dataset = require('D:/TestCafeHome/TestCafeDemo-2/TESTCAFE/Test/KaayuAdminAuto/DataSet/dataKaayu.json');
+const dataset = require('D:/TestCafeHome/TestCafeDemo-6/TESTCAFE/Test/KaayuAdminAuto/DataSet/dataKaayu.json');
 
-const url = 'http://15.156.242.8/login';
-const Homeurl = 'http://15.156.242.8/';
+const url = 'https://staging.kaayu.ca/login';
+const Homeurl = 'https://staging.kaayu.ca/';
 
 const getURL = ClientFunction(() => window.location.href);
 

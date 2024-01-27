@@ -1,0 +1,22 @@
+********************************************************
+|Read Me File 
+********************************************************
+|Run Log 
+For Find Path  (Ex : testcafe chrome .\TESTCAFE\Test\MagicHRMS\Tests\LoginHrmsTest.js  )
+
+    1.LoginHrmsTest =  npx testcafe chrome .\TESTCAFE\Test\MagicHRMS\Tests\LoginHrmsTest.js
+
+********************************************************
+|Data Set
+    1.DataHrmsSet
+
+********************************************************
+|Pages Name :
+    1.LoginHrmsPage
+    2.HomeHrmsPage
+
+
+********************************************************
+|Tests Name :
+    1.LoginHrmsTest
+    2.HomeHrmsTest
